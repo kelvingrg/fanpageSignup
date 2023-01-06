@@ -11,7 +11,7 @@ var app = express();
 require('dotenv').config(); 
 
 app.use(cors([
-  'http://localhost:3000','https://fanpage-signup.onrender.com']))
+  'http://localhost:3000','https://fanpage-signup1.onrender.com']))
 var usersRouter = require('./routes/users');
 
 
