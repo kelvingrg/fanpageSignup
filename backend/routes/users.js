@@ -23,11 +23,16 @@ const user={
 
 }
 USER(user).save().then((response)=>{
+  console.log(response,"**************");
   res.status(200).json({signUp:true, message:'signup successfully completed'})
+})
+.catch((err)=>{
+  console.log(err);
+  res.status(503).json({signUp:false, message:'signup failed'+err})
 })
   }
   catch(err){
-    res.status(503).json({signUp:fasle, message:'signup failed'})
+    res.status(503).json({signUp:false, message:'signup failed'})
 
   }
 

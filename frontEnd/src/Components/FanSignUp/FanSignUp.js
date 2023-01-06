@@ -33,16 +33,8 @@ function FanSignUp() {
     validatePassword()
         if (vallidateFirstName() && vallidateLastName() && vallidateUserName() && vallidateEmail() && validatePassword) {
           try{
-            Swal.fire({
-              title: 'sign up done successfully',
-              showClass: {
-                popup: 'animate__animated animate__fadeInDown'
-              },
-              hideClass: {
-                popup: 'animate__animated animate__fadeOutUp'
-              }
-            })
-            axios.post('http://localhost:9000/fanSignUp', userData).then((response)=>{
+            axios.post(`${process.env.REACT_APP_BACKEND_URL}/fanSignUp`, userData).then((response)=>{
+              console.log(response);
             Swal.fire({
               title: 'sign up done successfully',
               showClass: {
@@ -54,6 +46,7 @@ function FanSignUp() {
             })
            })
            .catch((err)=>{
+            console.log(err);
             Swal.fire({
               title: 'sign up failed',
               showClass: {

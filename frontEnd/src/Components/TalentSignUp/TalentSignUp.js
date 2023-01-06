@@ -46,7 +46,7 @@ validatePassword()
             popup: 'animate__animated animate__fadeOutUp'
           }
         })
-        axios.post('http://localhost:9000/talentSignup', userData).then((response)=>{
+        axios.post(`${process.env.REACT_APP_BACKEND_URL}/talentSignup`, userData).then((response)=>{
         Swal.fire({
           title: 'sign up done successfully',
           showClass: {
