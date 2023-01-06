@@ -1,0 +1,17 @@
+.selected{
+    background-color: #39FF14;
+color: black;
+}
+.notSelected{
+    background-color:black;
+    color: white;
+}
+.formBody{
+    background-color: #1f201f;
+}
+.w-65{
+    width: 65%;
+}
+.fs-8 {
+font-size: small;
+}

@@ -1,0 +1,16 @@
+.inputSuccess2{
+    border: none;
+}
+.inputBox{
+border-color: #39FF14;
+height: 25px;
+}
+.inputSuccess2{
+    border-top: #39FF14;
+    border-bottom: #39FF14;
+    caret-color: white;
+    color: white;
+}
+.inputBox{
+    border :1px solid #39FF14;
+}
